@@ -375,7 +375,7 @@ public void cargarInventario(){
 
             JOptionPane.showMessageDialog(this, "Ingrediente eliminado correctamente.");
         }
-    } catch (Exception ex) {
+    } catch (HeadlessException ex) {
         JOptionPane.showMessageDialog(this, "Ocurrió un error al eliminar: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
     }
 
@@ -414,7 +414,7 @@ public void cargarInventario(){
         }
     } catch (NumberFormatException ex) {
         JOptionPane.showMessageDialog(this, "Ingrese una cantidad válida.", "Error", JOptionPane.ERROR_MESSAGE);
-    } catch (Exception ex) {
+    } catch (HeadlessException ex) {
         JOptionPane.showMessageDialog(this, "Ocurrió un error al modificar: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
     }
 
