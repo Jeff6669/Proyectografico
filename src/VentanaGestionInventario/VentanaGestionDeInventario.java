@@ -116,7 +116,8 @@ public void cargarInventario(){
         TittleGestionInventario.setForeground(new java.awt.Color(0, 153, 153));
         TittleGestionInventario.setText("Gestion de Inventario");
 
-        tablaInventario.setBackground(new java.awt.Color(0, 102, 0));
+        tablaInventario.setBackground(new java.awt.Color(255, 255, 255));
+        tablaInventario.setForeground(new java.awt.Color(0, 0, 0));
         tablaInventario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

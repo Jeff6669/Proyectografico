@@ -1,6 +1,7 @@
 
 package VentanaGestionCocina;
 
+import PanelPrincipal.PanelPrincipal;
 import VentanaGestionInventario.VentanaGestionDeInventario;
 import VentanaGestionTrabajadores.VentanaGestionTrabajadores;
 import javax.swing.*;
@@ -23,6 +24,7 @@ public class VentanaGestionCocina extends JFrame {
         jLabel1 = new javax.swing.JLabel();
         btnGestionTrabajadores = new javax.swing.JButton();
         btnGestionInventarios = new javax.swing.JButton();
+        btnVolver = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,6 +47,13 @@ public class VentanaGestionCocina extends JFrame {
             }
         });
 
+        btnVolver.setText("Volver");
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -58,7 +67,8 @@ public class VentanaGestionCocina extends JFrame {
                         .addGap(185, 185, 185)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnGestionInventarios, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnGestionTrabajadores, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnGestionTrabajadores, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(245, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -66,11 +76,13 @@ public class VentanaGestionCocina extends JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(93, 93, 93)
+                .addGap(56, 56, 56)
                 .addComponent(btnGestionTrabajadores, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59)
+                .addGap(34, 34, 34)
                 .addComponent(btnGestionInventarios, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(112, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -123,6 +135,15 @@ public class VentanaGestionCocina extends JFrame {
         
     }//GEN-LAST:event_btnGestionInventariosActionPerformed
 
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+    
+     this.dispose();   
+    PanelPrincipal panelPrincipal = new PanelPrincipal(); // Cambia al nombre exacto de tu clase principal
+        panelPrincipal.setVisible(true);    
+        
+        
+    }//GEN-LAST:event_btnVolverActionPerformed
+
                                                     
 
 
@@ -135,6 +156,7 @@ public class VentanaGestionCocina extends JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGestionInventarios;
     private javax.swing.JButton btnGestionTrabajadores;
+    private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
